@@ -9,8 +9,8 @@ const CartContainer = () => {
       <section className="cart">
         {/* cart header */}
         <header>
-          <h2>your bag</h2>
-          <h4 className="empty-cart">is currently empty</h4>
+          <h2>Mi Carrito</h2>
+          <h4 className="empty-cart">El carrito se encuentra vacio</h4>
         </header>
       </section>
     );
@@ -19,7 +19,7 @@ const CartContainer = () => {
     <section className="cart">
       {/* cart header */}
       <header>
-        <h2>your bag</h2>
+        <h2>Mi Carrito</h2>
       </header>
       {/* cart items */}
       <div>
@@ -39,7 +39,7 @@ const CartContainer = () => {
           className="btn clear-btn"
           onClick={() => console.log("clear cart")}
         >
-          clear cart
+          Vaciar Carrito
         </button>
       </footer>
     </section>
