@@ -39,9 +39,13 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "DISPLAY_ITEMS", payload: cart });
   };
 
+  const toggleAmount = (id, type) => {
+    dispatch({ type: "TOGGLE_AMOUNT", payload: { id, type } });
+  };
+
   useEffect(() => {
-    fectData()
-  }, [])
+    fectData();
+  }, []);
 
   useEffect(() => {
     dispatch({ type: "GET_TOTALS" });
@@ -55,6 +59,7 @@ const AppProvider = ({ children }) => {
         remove,
         increase,
         decrease,
+        toggleAmount,
       }}
     >
       {children}
